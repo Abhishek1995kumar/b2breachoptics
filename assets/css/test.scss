@@ -1,0 +1,119 @@
+@import "style.css";
+@import "category.css";
+@media only screen and (max-width: 991px) {
+  #removespace1 {
+    margin-top: -10.938rem;
+  }
+  #removespace3 {
+    margin-bottom: -3.75rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .addtocart-form {
+    width: clamp(800px, 50%, 750px);
+    height: auto;
+    margin: 0 auto;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #52dcee;
+    margin-bottom: 10px;
+  }
+}
+
+#cart-button {
+  margin-left: 20px;
+}
+
+// Start filter 
+
+@media screen and (min-width: 1000px) {
+  .close-icon {
+    display: none;
+    color: red;
+  }
+}
+/* Custom CSS for the mobile version of the filter panel */
+@media (max-width: 999px) {
+    .product-filter-leftDiv {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 999;
+        transition: left 0.3s ease;
+        border-right: 3px solid grey;
+        overflow-y: auto;
+        // box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .close-icon {
+        display: block;
+    }
+    
+    .show-panel {
+        left: 0;
+    }
+}
+
+.close-icon {
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    float: right;
+}
+
+.filter-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.mobilefilter {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.mobilefilter:hover {
+    background-color: #555;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 999px) {
+    #custom-form-group {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 576px) {
+    #price-min,
+    #price-max,
+    #price-search-btn {
+        width: 40%;
+        flex-wrap: wrap;
+        margin-top: 1px;
+    }
+}
+
+// End filter 
+
+
+// Start index.blade.php
+@media screen and (max-width: 991px) {
+    #bottomCarouselSlider {
+        margin-top: 0.75rem;
+    }
+}
+// End  index.blade.php

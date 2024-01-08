@@ -1,0 +1,396 @@
+@import "style.css";
+#product_container{
+    display: flex;
+    gap: 0.5rem
+}
+
+
+.col_div_1 {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+
+#side_small_image {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+#itemsContainer{
+    display:flex;
+    flex-direction: column;
+}
+
+#fade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+
+.hover14 img{
+    -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.hover14:hover img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+#bulk_qty{
+     display:none;
+}
+
+.selected_css {
+  box-shadow: 3px 2px 2px #afadad;
+}
+
+#light {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  max-width: 800px;
+  max-height: 560px;
+  margin-left: 300px;
+  margin-top: -180px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  z-index: 1002;
+  overflow: visible;
+}
+
+#boxclose {
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1002;
+  opacity: 0.9;
+}
+
+.boxclose:before {
+  content: "×";
+}
+
+#fade:hover ~ #boxclose {
+  display:none;
+}
+
+.test:hover ~ .test2 {
+  display: none;
+}
+
+/*video 2*/
+#fade1 {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+
+#light1 {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  max-width: 800px;
+  max-height: 560px;
+  margin-left: 300px;
+  margin-top: -180px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  z-index: 1002;
+  overflow: visible;
+}
+
+.product-price .offer-pricenew {
+    color: #4d4d4d;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 10px;
+    color: initial;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#boxclose1 {
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1002;
+  opacity: 0.9;
+}
+
+.boxclose1:before {
+  content: "×";
+}
+
+#fade1:hover ~ #boxclose1 {
+  display:none;
+}
+/*end video 2*/
+
+
+/*video 3*/
+#fade2 {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+
+#light2 {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  max-width: 800px;
+  max-height: 560px;
+  margin-left: 300px;
+  margin-top: -180px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  z-index: 1002;
+  overflow: visible;
+}
+
+#boxclose2 {
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1002;
+  opacity: 0.9;
+}
+
+.boxclose2:before {
+  content: "×";
+}
+
+#fade2:hover ~ #boxclose2 {
+  display:none;
+}
+/*end video 3*/
+
+
+/*media query for mobile responsive*/
+
+#imagepad{
+  padding-left: 106px;
+}
+
+.selected_css {
+
+  box-shadow: 1px 2px 3px 4px rgba(46,53,227,0.5);
+  margin:5px;
+}
+
+.row.content{
+
+    margin-right: -187px;
+    margin-left: -15px;
+}
+
+/* Review CSS */
+.btn-grey{
+    background-color:#D8D8D8;
+	color:#FFF;
+}
+
+.btn-grey-input{
+    background-color:#D8D8D8;
+	color:#000;
+}
+.rating-block{
+	background-color:#FAFAFA;
+	border:1px solid #EFEFEF;
+	padding:15px 15px 20px 15px;
+	border-radius:3px;
+}
+.bold{
+	font-weight:700;
+}
+.padding-bottom-7{
+	padding-bottom:7px;
+}
+
+.review-block{
+	background-color:#FAFAFA;
+	border:1px solid #EFEFEF;
+	padding:15px;
+	border-radius:3px;
+	margin-bottom:15px;
+}
+.review-block-name{
+	font-size:12px;
+	margin:10px 0;
+}
+.review-block-date{
+	font-size:12px;
+}
+.review-block-rate{
+	font-size:13px;
+	margin-bottom:15px;
+}
+.review-block-title{
+	font-size:15px;
+	font-weight:700;
+	margin-bottom:10px;
+}
+.review-block-description{
+	font-size:13px;
+}
+
+#prescriptionModal .modal-content {
+    width: 830px;
+    margin: 0;
+}
+
+.swal2-container.swal2-center > .swal2-popup {
+    font-size: 14px;
+}
+
+.main_product_div {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.main_img_div {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.main_containent_div {
+    width: 100%;
+    padding: 1rem;
+}
+
+.review_divs {
+    width: 100%;
+    padding-right: 0;
+    margin-right: 0;
+}
+    
+.image_div_shubh{
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    
+    .header-fluid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .header-fluid .navbar-nav {
+        display: flex;
+        width: 100% !important;
+    }
+    
+    #product_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .col_div_1 {
+        display: -webkit-inline-box;
+        width: 100% !important;
+    }
+    
+    .itemsContainer {
+        width: 100% !important;
+    }
+    
+    .main_product_div {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .main_img_div {
+        width: 100%;
+        height: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image_div_shubh{
+        height: auto;
+    }
+    
+    #prescriptionModal .modal-content {
+        width: auto;
+        margin: 0;
+    }
+    
+    .small_banner .container-fluid .row {
+        padding-left: -30px;
+    }
+    
+    #imagepad{
+        padding-left: 50px;
+    }
+}

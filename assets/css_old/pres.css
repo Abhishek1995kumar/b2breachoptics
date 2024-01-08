@@ -1,0 +1,876 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, "Segee UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    place-items: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header img {
+    width: 120px;
+    height: 40px;
+    margin-left: 30px;
+}
+
+.section {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.grid-column-two {
+    display: flex;
+}
+
+.form_image {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    margin-left: 100px;
+    display: flex;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.card-image .img-div-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.img-div-data img {
+    width:90%;
+    height: 90%;
+    border-radius: 6px;
+}
+
+/* Progressive bar */
+
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;    /* it is use for progress bar increament just like declair variable in main progress bar class*/
+    margin: 0.5rem 0 1rem;
+}
+
+/* .progressbar::before,
+.progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+} */
+
+/* .progress-step {
+    width: 1.1875rem;
+    height: 1.1875rem;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* progrssbar increament */
+/* .progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+} */
+
+/* .progress-step::after {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 0.85rem;
+    color: rgb(114, 231, 103);
+} */
+
+/* .progress-step-active {
+    background-color: rgb(114, 231, 103);
+    color: rgb(114, 231, 103);
+    animation: animate 0.5s;
+    transition: animation 0.5s;
+} */
+
+/* @keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+} */
+
+/* end progressive bar */
+
+/* Form CSS */
+
+.addtocart-form {
+    width: clamp(450px, 30%, 530px);
+    height: 543px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to bottom right, #f1f1f1, red);
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    text-align: center;
+}
+
+.title h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.title h3 i {
+    color: #fff;
+    border: 1px solid rgb(38, 232, 96);
+    border-radius: 30px;
+    margin-right: 10px;
+    background-color: rgb(38, 232, 96);
+    size: 14px;
+    font-weight: 300;
+}
+
+.title h3 span {
+    color: rgb(38, 232, 96);
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.back {
+	width: 60px;
+	height: 40px;
+	font-size: 16px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+	border: none;
+	cursor: pointer;
+}
+
+.backbtn {
+	position: relative;
+	display: flex;
+	background-color: #f9df99;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.backbtn:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.form-step {
+    width: 100%;
+    height: 450px;
+    background-color: #f5f0f0;
+    padding: 20px;
+    display: none;
+    border-radius: 0 0 8px 8px;
+}
+
+#img-model {
+    display:none;
+}
+
+.form-step-active {
+    width: 100%;
+    display: block;
+}
+
+.input-group {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    position: relative;
+}
+
+.massage {
+    display: none;
+    position: absolute;
+    color: red;
+    font-size: 12px;
+}
+
+.option-input-group .right:nth-child(2) .massage {
+    margin-top: 30px;
+}
+
+.option-input-group .right:nth-child(3) .massage {
+    margin-top: 30px;
+}
+
+.option-input-group .right:nth-child(4) .massage {
+    margin-top: 30px;
+}
+
+.option-input-group .right:nth-child(5) .massage {
+    margin-top: 30px;
+}
+
+.img-div {
+    border: none;
+}
+
+.img-name {
+    border: none;
+    background-color: rgb(242, 234, 234);
+}
+
+.show-prescription {
+    width: 100%;
+    text-align: right;
+    margin-top: -20px;
+}
+
+.show-prescription button {
+    border: none;
+    border-bottom: 1px solid #838587;
+    color: #838587;
+    background-color:rgb(242, 234, 234);
+    cursor: pointer;
+}
+
+.both_eyes, .both_eyes-2, .both_eyes-3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    
+}
+
+.option-input-group {
+    width: 100%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.option-input-group .right {
+    width: 100%;
+    height: 40px;
+    padding: 0 2px;
+}
+
+.option-input-group .right select {
+    width: 100%;
+    height: 100%;
+    border:none;
+}
+
+.box-input-group {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qty_box {
+    width: 100%;
+    height: 50px;
+}
+
+.qty_box select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 10px;
+}
+
+.qty_box select:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0);
+}
+
+.data-input-group {
+    width: 100%;
+    text-align: center;
+}
+
+.data-input-group .right {
+    display: grid;
+}
+
+.data-input-group .right:last-child label {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.data-input-group .right:last-child label p {
+    color:rgb(24, 215, 56);
+}
+
+.uploadImage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+    font-size: 16px;
+    background-color: rgba(255,255,255,0.7);
+    color: #000;
+    border: #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.uploadImage:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0);
+    transition: 0.2s;
+}
+
+
+
+.showImageData {
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size:14px;
+    color: #b3b3b3;
+    padding: 10px 18px;
+    border-radius: 10px;
+    position: absolute;
+    opacity: 0;
+    top: -55px;
+    pointer-events: none;
+}
+
+.uploadImage:hover .showImageData {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.upload{
+    display:none;
+}
+
+#showFile {
+    width: 100%;
+}
+
+#showLabel {
+    width: 100%;
+    text-align: center;
+    background-color: #97e7f1;
+}
+
+.fill-manual {
+    width: 100%;
+    font-size: 16px;
+    background-color: rgba(255,255,255,0.7);
+    color: #000;
+    border: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.fill-manual:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0);
+    transition: 0.2s;
+}
+
+.btn {
+    height: 50px;
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: rgb(11, 116, 214);
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: 0 0 0 3px rgb(111, 224, 117);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.box-qty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.box-qty p:first-child {
+    text-align: left;
+    color: rgb(100, 103, 104);
+}
+
+.box-qty p:nth-child(2) {
+    text-align: right;
+    color: rgb(11, 39, 48);
+}
+
+.box-qty p:last-child {
+    text-align: right;
+}
+
+.data-input-group .right .per-box:nth-child(1) {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 233px;
+    border-bottom: 1px solid rgb(200, 203, 204);
+}
+
+
+.per-box:nth-child(1) p:nth-child(2) {
+    color: rgb(100, 103, 104);
+}
+
+.data-input-group {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+}
+
+.data-input-group .to-cart {
+    width: 40%;
+    margin-left: 30%;
+    gap: 0.5rem;
+}
+
+.data-input-group .to-cart i {
+    margin-right: 20px;
+}
+
+#showLabel {
+    border-radius: 30px;
+}
+
+.sphare:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sphare-power {
+    display: flex;
+    position: relative;
+}
+
+.button-div {
+    display: inline-block;
+    position: relative;
+}
+
+.button-div .power-button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: #000;
+    padding: 0 2px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.button-div .power-button:hover {
+    background-color: rgb(218, 170, 170);
+}
+
+.power-button input {
+    width: 50%;
+    border: none;
+    transition: 0.3s;
+}
+
+.getPowerLeft:focus {
+    outline: none;
+}
+
+.getPowerRight:focus {
+    outline: none;
+}
+
+.getPowerBoth:focus {
+    outline: none;
+}
+
+.power-button:hover input {
+    border: none;
+    background-color: rgb(218, 170, 170);
+}
+
+.power-button:hover input:focus {
+    border: 1px solid rgb(218, 170, 170);
+    background-color: rgb(218, 170, 170);
+}
+
+.power-button .sphere-data {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: #000;
+    background-color: #fff;
+    transition: 0.3s;
+    padding: 2px;
+}
+
+.power-button:hover .sphere-data {
+    background-color: rgb(218, 170, 170);
+}
+
+.button-div .data-table {
+    width: 260px;
+    background-color: #f3eeee;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-div:hover .data-table {
+    visibility: visible;
+}
+
+.data-table .range-list {
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(188, 222, 169);
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
+
+.data-table .range-list svg {
+    display: flex;
+    height: 30px;
+}
+
+.data-table .range-list svg:first-child {
+    margin-top: 12px;
+    margin-left: 30%;
+}
+
+.data-table .range-list svg:last-child {
+    margin-top: 8px;
+    margin-left: 30%;
+}
+
+.sphare-data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    overflow-y: scroll;
+    height: 150px;
+}
+
+.value {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(223, 226, 186);
+    position: relative;
+}
+
+.value li {
+    white-space: nowrap;
+    display: block;
+    color:#000;
+    width: 100%;
+    background-color: rgb(223, 226, 186);
+    border: none;
+    text-align: center;
+    font-size:16px;
+    padding: 5px;
+}
+
+.sphare-data .min-data {
+    width: 100%;
+}
+
+.sphare-data .max-data {
+    width: 100%;
+}
+
+.min-data ul {
+    white-space: nowrap;
+    height: 100%;
+    display: block;
+    color:#000;
+}
+
+.max-data ul {
+    white-space: nowrap;
+    height: 100%;
+    display: block;
+    color:#000;
+}
+
+.min-data ul li {
+    width: 100%;
+    display: block;
+    color:#000;
+}
+
+.max-data ul li {
+    width: 100%;
+    display: block;
+    color:#000;
+}
+
+.min-data ul li:hover {
+    width: 100%;
+    display: block;
+    color: #000;
+    background-color:#e9f0f6;
+}
+
+.max-data ul li:hover {
+    width: 100%;
+    display: block;
+    color:#000;
+    background-color:#e9f0f6;
+}
+
+/* Main CSS End */
+
+/* Popup Window CSS Start */
+
+.modelShaddow {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 255, 255, 0.6);
+}
+
+.prescriptionModel {
+    display: none;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 620px;
+    background: #f5f5f5;
+    font-family: "Raleway";
+    padding: 20px;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.model-header {
+    width: 100%;
+    height: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.model-title {
+    position: fixed;
+    top: 0;
+    left: 20px;
+}
+
+.close {
+    width: 30px;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 3px;
+    background-color: #f5f5f5;
+}
+
+.close:hover {
+    border-radius: 30px;
+    background-color: rgb(241, 235, 235);
+}
+
+.select-prescription {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+}
+
+.select-prescription table {
+    position: relative;
+    left: 0;
+}
+
+.select-prescription table tr td ul li {
+    color: #9a9494;
+    top: 5px;
+}
+
+.contact-lens-data {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 100px;
+    border: 1px solid #000;
+}
+
+.contact-lens-data table {
+    padding: 20px 0;
+}
+
+.contact-lens-data .table-bordered thead tr th {
+    border-bottom: 1px solid #000;
+}
+
+.right-left-data {
+    display: none;
+    position: relative;
+    left: 20%;
+    width: 60%;
+    height: 100px;
+}
+
+.data-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid #000;
+}
+
+.data-content table {
+    padding: 20px 0;
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+    background-color:  #f1f1f1;
+    border-radius: 10px;
+    bottom: 0;
+
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* End CSS */
+
+/* Responsive page */
+
+@media only screen and (max-width: 1200px){
+    .grid-column-two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        gap: 20px;
+    }
+    
+    .form_image {
+        justify-content: center;
+    }
+    .card-image{
+        width: 800px;
+        margin-left: 0;
+        padding: 10px;
+    }
+    
+    .form_image img {
+        width: 750px;
+        height: 450px;
+        border-radius: 6px;
+    }
+    
+    .addtocart-form {
+        width: clamp(650px, 50%, 750px);
+        height: auto;
+        margin: 0 auto;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: #52dcee;
+        margin-bottom: 10px;
+    }
+    
+    .form-data {
+        height: 400px;
+    }
+    
+    .main_box {
+        height: 340px;
+    }
+    
+    .uploadImage {
+        align-items: center;
+        font-size: 20px;
+        height: 100px;
+    }
+    
+    .fill-manual {
+        display: flex;
+        font-size: 20px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn {
+        font-size: 20px;
+        height: 60px;
+    }
+}

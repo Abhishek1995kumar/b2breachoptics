@@ -1,0 +1,67 @@
+
+    
+#example_processing{
+    background: none;
+    border: none;
+}
+
+    .dataTables_processing {
+        border: none;
+        background-color: transparent;
+    }
+    
+    .loading {
+        display: flex;
+        jestify-ccontent: space-between;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        background: transparent;
+        position: fixed;
+        cursor: wait;
+        pointer-events: all;
+        z-index: 99999999999;
+        top: 50%;
+        left: 50%;
+    }
+    
+    .loading__letter {
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-family: 'Orbitron', sans-serif;
+        background: linear-gradient(180deg, #e90505 30%, #070707 74%);
+         -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: bounce 2s infinite;
+    }
+    
+    .loading__letter:nth-child(2) {
+        animation-delay: .1s;	
+    }
+    .loading__letter:nth-child(3) {
+        animation-delay: .2s;
+    }
+    .loading__letter:nth-child(4) {
+        animation-delay: .3s;	
+    }
+    .loading__letter:nth-child(5) {
+        animation-delay: .4s;
+    }
+    .loading__letter:nth-child(6) {
+        animation-delay: .5s;	
+    }
+    
+    @keyframes bounce {
+        0% {
+            transform: translateY(0px)
+        }
+        40% {
+            transform: translateY(-40px);
+        }
+        80%, 100% {
+            transform: translateY(0px);
+        }
+    }
+    
